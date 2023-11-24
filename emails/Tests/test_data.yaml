@@ -1,0 +1,13 @@
+test :
+  method: get
+  end_point: /test
+  payload:
+  - expected_data:
+      success: working
+
+test1 :
+  method: get
+  end_point: /test1
+  payload:
+  - expected_data:
+      success: working

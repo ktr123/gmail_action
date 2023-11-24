@@ -1,0 +1,31 @@
+{
+    "rules": {
+      "rules_to_satisfy": ["All", "Any"],
+      "fields_to_consider": [
+        {
+          "name": "Subject",
+          "validation_type": "str"
+        },
+        {
+          "name": "From",
+          "validation_type": "str"
+        },
+        {
+          "name": "Received Date",
+          "validation_type": "date"
+        }
+      ],
+      "validation_type": {
+        "str": ["Contains", "Equals", "Does not Contains", "Does Not Equals"],
+        "date": ["Greater than", "Less than"]
+      },
+      "actions_to_perform": [
+        {
+          "action": "Mark As Unread"
+        },
+        {
+          "action": "Mark As Read"
+        }
+      ]
+    }
+  }
